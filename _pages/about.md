@@ -16,4 +16,4 @@ social: true # includes social icons at the bottom of the page
 
 Hello! I am a Researcher at [Samsung AI Center](https://www.sait.samsung.co.kr/saithome/main/main.do).
 
-I received a bachelor's degree in Computer Science and Engineering and minored in Automotive Software Design. I was a research intern at KETI (Korea Electronics Technology Institute).
+I received a B.S. degree in Computer Science and Engineering with a minor in Automotive Software Design. I was a research intern at KETI (Korea Electronics Technology Institute).
