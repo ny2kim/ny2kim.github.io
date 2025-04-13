@@ -16,11 +16,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-our-paper-d-3dld-has-been-accepted-to-icassp-2023",
+        },{id: "news-our-paper-d-3dld-has-been-accepted-to-icassp-2023",
           title: 'Our paper “D-3DLD” has been accepted to ICASSP 2023!',
+          description: "",
+          section: "News",},{id: "news-our-paper-unveiling-the-hidden-has-been-accepted-to-neurips-2024",
+          title: 'Our paper “Unveiling the Hidden” has been accepted to NeurIPS 2024!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
