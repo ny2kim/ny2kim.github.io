@@ -26,28 +26,11 @@ layout: default
       rounded' %}
           {% endif %}
 
-        {%- comment -%}
         {% capture sizes %}
           (min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px,
           (min-width: 576px) 30vw,
           95vw
         {% endcapture %}
-        {%- endcomment -%}
-
-        {% capture sizes %}200px{% endcapture %}
-
-        {% assign profile_image_style = "width: 200px; height: auto;" %}
-      
-        {% include figure.liquid
-           loading="eager"
-           path=profile_image_path
-           class=profile_image_class
-           style=profile_image_style
-           sizes=sizes
-           alt=page.profile.image
-           cache_bust=true
-        %}
-      {% endif %}
 
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
