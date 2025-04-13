@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "D-3DLD" has been accepted to ICASSP 2023!
+Our paper "D-3DLD" has been accepted to **ICASSP 2023**!
