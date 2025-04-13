@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 ---
 <style>
-  h1.page-title {
+  h1.post-title {
     display: none;
   }
 </style>
