@@ -5,9 +5,19 @@ title: cv
 nav: true
 nav_order: 5
 ---
+<style>
+  h1.page-title {
+    display: none;
+  }
+</style>
 
 <h1>Nayeon Kim – CV</h1>
 
-<p><em>Last updated: {{ site.time | date: "%Y-%m-%d" }}</em></p>
+<p><em>Last updated: {{ site.time | date: "%b %d, %Y" }}</em></p>
 
-<iframe src="/assets/pdf/CV_Nayeon_Kim.pdf" width="100%" height="1000px" style="border: none;"></iframe>
+<iframe
+  src="/assets/pdf/CV_Nayeon_Kim.pdf#toolbar=0&navpanes=0&view=FitH"
+  width="100%"
+  height="1000px"
+  style="border: none;"
+></iframe>
