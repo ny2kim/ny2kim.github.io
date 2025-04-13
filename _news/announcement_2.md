@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "Unveiling the Hidden" has been accepted to NeurIPS 2024!
+Our paper "Unveiling the Hidden" has been accepted to **NeurIPS 2024**!
