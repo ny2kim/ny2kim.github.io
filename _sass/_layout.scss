@@ -53,7 +53,16 @@ body.sticky-bottom-footer {
 
 // TODO: redefine projects layout.
 
+
 h2 {
-  border-bottom: 1px solid #dee2e6;
-  padding-bottom: 0.5rem;
+  // border-bottom: 1px solid #dee2e6;
+  // padding-bottom: 0.5rem;
+  
+  padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+  
+  border-bottom: 3px solid var(--global-theme-color);
+  display: inline-block;
+  width: auto;
 }
