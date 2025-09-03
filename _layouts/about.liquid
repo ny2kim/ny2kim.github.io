@@ -55,17 +55,11 @@ layout: default
 
     <!-- Work Experience -->
     {% if page.work_experiences %}
-      <h2>
-        <a href="{{ '/work/' | relative_url }}" style="color: inherit">Work Experiences</a>
-      </h2>
       {% include work_experience.liquid %}
     {% endif %}
 
     <!-- Education -->
     {% if page.education %}
-      <h2>
-        <a href="{{ '/education/' | relative_url }}" style="color: inherit">Education</a>
-      </h2>
       {% include education.liquid %}
     {% endif %}
 
