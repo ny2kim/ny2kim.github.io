@@ -16,17 +16,15 @@
       </div>
       
       <!-- 오른쪽: 위치와 기간 -->
-      <div class="col-md-3 text-right">
-        <div class="education-meta">
-          <p class="education-location">
-            <i class="fa-solid fa-location-dot"></i>
-            Seoul, South Korea
-          </p>
-          <p class="education-period">
-            <i class="fa-solid fa-calendar"></i>
-            Mar 2015 - Feb 2019
-          </p>
-        </div>
+      <div class="education-meta">
+        <p class="education-location">
+          <i class="fa-solid fa-location-dot"></i>
+          Seoul, South Korea
+        </p>
+        <p class="education-period">
+          <i class="fa-solid fa-calendar"></i>
+          Mar 2015 - Feb 2019
+        </p>
       </div>
     </div>
   </div>
@@ -39,23 +37,15 @@
 
 .education-item {
   background-color: var(--global-card-bg-color);
-  border: 1px solid var(--global-divider-color);
   border-radius: 0.375rem;
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .education-logo {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 80px;
+  max-height: 80px;
   object-fit: contain;
-}
-
-.education-degree {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--global-text-color);
 }
 
 .education-school {
@@ -63,6 +53,13 @@
   font-weight: 500;
   margin-bottom: 0.25rem;
   color: var(--global-theme-color);
+}
+
+.education-degree {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--global-text-color);
 }
 
 .education-minor {
@@ -86,7 +83,7 @@
 .education-location, .education-period {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 @media (max-width: 768px) {
