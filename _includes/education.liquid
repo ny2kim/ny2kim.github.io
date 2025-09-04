@@ -2,8 +2,104 @@
 <h2 id="education">Education</h2>
 <div class="education-section">
   <div class="education-item">
-    <h3>B.S. in Computer Science and Engineering</h3>
-    <p class="education-minor"><em>Minor in Automotive Software Design</em></p>
-    <!-- 필요하다면 더 자세한 정보 추가 -->
+    <div class="row align-items-center">
+      <!-- 왼쪽: 학교 로고 -->
+      <div class="col-md-2 text-center">
+        <img src="/assets/img/kookmin_university.jpg" alt="Kookim University Logo" class="education-logo">
+      </div>
+      
+      <!-- 중간: 학교 정보 -->
+      <div class="col-md-7">
+        <h3 class="education-degree">B.S. in Computer Science and Engineering</h3>
+        <p class="education-school">Kookmin University</p>
+        <p class="education-minor"><em>Minor in Automotive Software Design</em></p>
+      </div>
+      
+      <!-- 오른쪽: 위치와 기간 -->
+      <div class="col-md-3 text-right">
+        <div class="education-meta">
+          <p class="education-location">
+            <i class="fa-solid fa-location-dot"></i>
+            Seoul, South Korea
+          </p>
+          <p class="education-period">
+            <i class="fa-solid fa-calendar"></i>
+            Mar 2015 - Feb 2019
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+.education-section {
+  margin-bottom: 2rem;
+}
+
+.education-item {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.375rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.education-logo {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.education-degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.education-school {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--global-theme-color);
+}
+
+.education-minor {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0;
+}
+
+.education-meta p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.education-meta i {
+  width: 16px;
+  margin-right: 0.5rem;
+  color: var(--global-theme-color);
+}
+
+.education-location, .education-period {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .education-item .row {
+    text-align: center;
+  }
+  
+  .education-meta {
+    margin-top: 1rem;
+  }
+  
+  .education-location, .education-period {
+    justify-content: center;
+  }
+}
+</style>
