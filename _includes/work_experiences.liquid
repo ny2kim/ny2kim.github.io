@@ -1,13 +1,198 @@
 <!-- _includes/work_experiences.liquid -->
 <h2 id="work-experiences">Work Experiences</h2>
 <div class="work-experiences-section">
+  <!-- Samsung AI Center -->
   <div class="work-item">
-    <h3>AI Researcher</h3>
-    <p class="work-company"><a href="https://www.sait.samsung.co.kr/saithome/main/main.do">Samsung AI Center</a>, Suwon, South Korea</p>
+    <div class="row align-items-center">
+      <!-- 왼쪽: 회사 로고 -->
+      <div class="col-md-2 text-center">
+        <img src="/assets/img/sait.png" alt="SAIT Logo" class="work-logo">
+      </div>
+      
+      <!-- 중간: 직책 및 회사 정보 -->
+      <div class="col-md-7">
+        <h3 class="work-position">AI Researcher</h3>
+        <p class="work-company">
+          <a href="https://www.sait.samsung.co.kr/saithome/main/main.do" target="_blank">
+            Samsung Advanced Institute of Technology (SAIT)
+          </a>
+        </p>
+        <p class="work-description">
+          Research on autonomous driving and computer vision, focusing on HD map construction and multi-modal learning
+        </p>
+        <!-- 주요 업무/성과 -->
+        <ul class="work-highlights">
+          <li>Developed online vectorized HD map construction algorithms</li>
+          <li>Published papers at conferences (NeurIPS 2024, ICASSP 2023)</li>
+        </ul>
+      </div>
+      
+      <!-- 오른쪽: 기간과 위치 -->
+      <div class="col-md-3 text-right">
+        <div class="work-meta">
+          <p class="work-period">
+            2022 - Present
+          </p>
+          <p class="work-location">
+            Suwon, South Korea
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
   
+  <!-- KETI -->
   <div class="work-item">
-    <h3>Research Intern</h3>
-    <p class="work-company">KETI (Korea Electronics Technology Institute)</p>
+    <div class="row align-items-center">
+      <!-- 왼쪽: 회사 로고 -->
+      <div class="col-md-2 text-center">
+        <img src="/assets/img/keti_logo.png" alt="KETI Logo" class="work-logo">
+      </div>
+      
+      <!-- 중간: 직책 및 회사 정보 -->
+      <div class="col-md-7">
+        <h3 class="work-position">Research Intern</h3>
+        <p class="work-company">
+          <a href="https://www.keti.re.kr/" target="_blank">
+            KETI (Korea Electronics Technology Institute)
+          </a>
+        </p>
+        <p class="work-description">
+          Computer vision research focusing on unsupervised depth prediction and camera motion estimation
+        </p>
+        <!-- 주요 업무/성과 -->
+        <ul class="work-highlights">
+          <li>Developed unsupervised depth prediction algorithms for dynamic environments</li>
+          <li>Implemented camera motion estimation systems</li>
+          <li>Contributed to conference publications in automotive engineering</li>
+        </ul>
+      </div>
+      
+      <!-- 오른쪽: 기간과 위치 -->
+      <div class="col-md-3 text-right">
+        <div class="work-meta">
+          <p class="work-period">
+            2018
+          </p>
+          <p class="work-location">
+            Seoul, South Korea
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+.work-experiences-section {
+  margin-bottom: 2rem;
+}
+
+.work-item {
+  background-color: var(--global-card-bg-color);
+  border-radius: 0.375rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.work-logo {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.work-position {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.work-company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.work-company a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.work-company a:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+}
+
+.work-description {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.work-highlights {
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.work-highlights li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.work-meta p {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+}
+
+.work-meta i {
+  width: 16px;
+  margin-right: 0.5rem;
+  color: var(--global-theme-color);
+}
+
+.work-period, .work-location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .work-item .row {
+    text-align: center;
+  }
+  
+  .work-meta {
+    margin-top: 1rem;
+  }
+  
+  .work-period, .work-location {
+    justify-content: center;
+  }
+  
+  .work-highlights {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+
+/* 다크모드 호환 */
+@media (prefers-color-scheme: dark) {
+  .work-logo {
+    background-color: white;
+    padding: 4px;
+  }
+}
+</style>
