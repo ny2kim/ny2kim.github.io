@@ -16,7 +16,7 @@ nav_order: 5
 <p><em>Last updated: {{ site.time | date: "%b %d, %Y" }}</em></p>
 
 <iframe
-  src="/assets/pdf/CV_Nayeon_Kim.pdf#toolbar=0&navpanes=0&view=FitH"
+  src="/assets/pdf/Nayeon_Kim_CV_250724.pdf#toolbar=0&navpanes=0&view=FitH"
   width="100%"
   height="1000px"
   style="border: none;"
