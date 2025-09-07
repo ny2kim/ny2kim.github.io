@@ -1,48 +1,55 @@
 <!-- Publication-style project layout -->
-<div class="row project-entry">
-  <!-- 왼쪽: 프로젝트 이미지 -->
-  <div class="col-sm-2 abbr project-img">
-    {% if project.img %}
-      <img src="{{ embedded.img | prepend: '/assets/img/' }}" alt="{{ project.title }}" class="preview z-depth-1 rounded">
-    {% else %}
-      <div class="preview-placeholder">
-        <i class="fa-solid fa-folder-open"></i>
-      </div>
-    {% endif %}
-  </div>
-
-  <!-- 오른쪽: 프로젝트 정보 -->
-  <div class="col-sm-10">
-    <!-- 프로젝트 제목 -->
-    <div class="title">
-      Embedded Software Contest
-    </div>
-    
-    <!-- 프로젝트 기간 -->
-    <div class="project-duration">
-      July 2017 - Nov 2017
-    </div>
-    
-    <!-- 프로젝트 설명 -->
-    <div class="project-description">
-      {% if project.description %}
-        {{ project.description }}
+<h2 id="projects">Projects</h2>
+<div class="projects-section">
+  <div class="row project-entry">
+    <!-- 왼쪽: 프로젝트 이미지 -->
+    <div class="col-sm-2 abbr project-img">
+      {% if project.img %}
+        <img src="{{ embedded.png | prepend: '/assets/img/' }}" alt="{{ project.title }}" class="preview z-depth-1 rounded">
       {% else %}
-        Developed embedded software that can be implemented in mini cars to enable autonomous driving on the track.
+        <div class="preview-placeholder">
+          <i class="fa-solid fa-folder-open"></i>
+        </div>
       {% endif %}
     </div>
-    
-    <!-- 기술 스택 -->
-    <div class="project-technologies">
-        <span class="tech-badge">C</span>
-        <span class="tech-badge">OpenCV</span>
-        <span class="tech-badge">Linux OS</span>
+  
+    <!-- 오른쪽: 프로젝트 정보 -->
+    <div class="col-sm-10">
+      <!-- 프로젝트 제목 -->
+      <div class="title">
+        Embedded Software Contest
+      </div>
+      
+      <!-- 프로젝트 기간 -->
+      <div class="project-duration">
+        July 2017 - Nov 2017
+      </div>
+      
+      <!-- 프로젝트 설명 -->
+      <div class="project-description">
+        {% if project.description %}
+          {{ project.description }}
+        {% else %}
+          Developed embedded software that can be implemented in mini cars to enable autonomous driving on the track.
+        {% endif %}
+      </div>
+      
+      <!-- 기술 스택 -->
+      <div class="project-technologies">
+          <span class="tech-badge">C</span>
+          <span class="tech-badge">OpenCV</span>
+          <span class="tech-badge">Linux OS</span>
+      </div>
+  
     </div>
-
   </div>
 </div>
 
 <style>
+.projects-section {
+  margin-bottom: 2rem;
+}
+
 .project-entry {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
