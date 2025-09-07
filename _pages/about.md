@@ -14,6 +14,7 @@ education: true
 selected_papers: true # includes a list of papers marked as "selected={true}"
 patents: true
 projects: true
+teaching: true
 service: true
 social: true # includes social icons at the bottom of the page
 ---
