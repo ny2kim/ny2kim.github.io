@@ -4,13 +4,7 @@
   <div class="row project-entry">
     <!-- 왼쪽: 프로젝트 이미지 -->
     <div class="col-sm-2 abbr project-img">
-      {% if project.img %}
         <img src="/assets/img/embedded.png" alt="{{ project.title }}" class="preview z-depth-1 rounded">
-      {% else %}
-        <div class="preview-placeholder">
-          <i class="fa-solid fa-folder-open"></i>
-        </div>
-      {% endif %}
     </div>
   
     <!-- 오른쪽: 프로젝트 정보 -->
