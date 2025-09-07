@@ -5,7 +5,7 @@
     <!-- 왼쪽: 프로젝트 이미지 -->
     <div class="col-sm-2 abbr project-img">
       {% if project.img %}
-        <img src="{{ embedded.png | prepend: '/assets/img/' }}" alt="{{ project.title }}" class="preview z-depth-1 rounded">
+        <img src="/assets/img/embedded.png" alt="{{ project.title }}" class="preview z-depth-1 rounded">
       {% else %}
         <div class="preview-placeholder">
           <i class="fa-solid fa-folder-open"></i>
@@ -53,7 +53,6 @@
 .project-entry {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--global-divider-color);
 }
 
 .project-img {
