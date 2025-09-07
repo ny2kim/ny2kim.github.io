@@ -77,6 +77,11 @@ layout: default
       {% include projects_horizontal.liquid %}
     {% endif %}
 
+    {% if page.teaching %}
+      {% include teaching.liquid %}
+    {% endif %}
+
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
