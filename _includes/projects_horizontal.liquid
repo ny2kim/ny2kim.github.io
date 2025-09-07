@@ -1,34 +1,164 @@
-<div class="col mb-4">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      <div class="row no-gutters">
-        {% if project.img %}
-          <div class="col-md-6">
-            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
-          </div>
-        {% endif %}
-        <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
-          <div class="card-body">
-            <h3 class="card-title">{{ project.title }}</h3>
-            <p class="card-text">{{ project.description }}</p>
-            <div class="row ml-1 mr-1 p-0">
-              {% if project.github %}
-                <div class="github-icon">
-                  <div class="icon" data-toggle="tooltip" title="Code Repository">
-                    <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-                  </div>
-                  {% if project.github_stars %}
-                    <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                      <i class="fa-solid fa-star"></i>
-                      <span id="{{ project.github_stars }}-stars"></span>
-                    </span>
-                  {% endif %}
-                </div>
-              {% endif %}
-            </div>
-          </div>
-        </div>
+<!-- Publication-style project layout -->
+<div class="row project-entry">
+  <!-- 왼쪽: 프로젝트 이미지 -->
+  <div class="col-sm-2 abbr project-img">
+    {% if project.img %}
+      <img src="{{ embedded.img | prepend: '/assets/img/' }}" alt="{{ project.title }}" class="preview z-depth-1 rounded">
+    {% else %}
+      <div class="preview-placeholder">
+        <i class="fa-solid fa-folder-open"></i>
       </div>
+    {% endif %}
+  </div>
+
+  <!-- 오른쪽: 프로젝트 정보 -->
+  <div class="col-sm-10">
+    <!-- 프로젝트 제목 -->
+    <div class="title">
+      Embedded Software Contest
     </div>
-  </a>
+    
+    <!-- 프로젝트 기간 -->
+    <div class="project-duration">
+      July 2017 - Nov 2017
+    </div>
+    
+    <!-- 프로젝트 설명 -->
+    <div class="project-description">
+      {% if project.description %}
+        {{ project.description }}
+      {% else %}
+        Developed embedded software that can be implemented in mini cars to enable autonomous driving on the track.
+      {% endif %}
+    </div>
+    
+    <!-- 기술 스택 -->
+    <div class="project-technologies">
+        <span class="tech-badge">C</span>
+        <span class="tech-badge">OpenCV</span>
+        <span class="tech-badge">Linux OS</span>
+    </div>
+
+  </div>
 </div>
+
+<style>
+.project-entry {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.project-img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-img .preview {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.preview-placeholder {
+  width: 150px;
+  height: 100px;
+  background-color: var(--global-card-bg-color);
+  border: 2px dashed var(--global-divider-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--global-text-color-light);
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.project-duration {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-duration i {
+  margin-right: 0.3rem;
+  color: var(--global-theme-color);
+}
+
+.project-description {
+  color: var(--global-text-color);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.project-technologies {
+  margin-bottom: 0.75rem;
+}
+
+.tech-badge {
+  display: inline-block;
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  padding: 0.2rem 0.5rem;
+  margin: 0.1rem 0.3rem 0.1rem 0;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.project-links {
+  margin-top: 0.5rem;
+}
+
+.project-links .btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding: 0.25rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.project-links .btn:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.project-links .btn i {
+  margin-right: 0.3rem;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .project-img {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-img .preview,
+  .preview-placeholder {
+    max-width: 120px;
+    max-height: 80px;
+  }
+}
+</style>
