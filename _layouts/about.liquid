@@ -73,6 +73,11 @@ layout: default
       {% include patents.liquid %}
     {% endif %}
 
+    {% if page.projects %}
+      {% include projects_horizontal.liquid %}
+    {% endif %}
+
+projects_horizontal.liquid
     <!-- Social -->
     {% if page.social %}
       <div class="social">
