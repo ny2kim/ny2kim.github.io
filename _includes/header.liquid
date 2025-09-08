@@ -56,25 +56,45 @@
             </a>
           </li>
 
-          <!-- Experiences -->
-          <li class="nav-item">
-            <a class="nav-link" href="#work-experiences">EXPERIENCES</a>
-          </li>
+          <!-- About 페이지에서만 anchor 링크 사용 -->
+          {% if page.permalink == '/' %}
+            <!-- Experiences -->
+            <li class="nav-item">
+              <a class="nav-link" href="#work-experiences">EXPERIENCES</a>
+            </li>
 
-          <!-- Education -->
-          <li class="nav-item">
-            <a class="nav-link" href="#education">EDUCATION</a>
-          </li>
+            <!-- Education -->
+            <li class="nav-item">
+              <a class="nav-link" href="#education">EDUCATION</a>
+            </li>
 
-          <!-- Publications -->
-          <li class="nav-item">
-            <a class="nav-link" href="#publications">PUBLICATIONS</a>
-          </li>
+            <!-- Publications -->
+            <li class="nav-item">
+              <a class="nav-link" href="#publications">PUBLICATIONS</a>
+            </li>
 
-          <!-- Patents -->
-          <li class="nav-item">
-            <a class="nav-link" href="#patents">PATENTS</a>
-          </li>
+            <!-- Patents -->
+            <li class="nav-item">
+              <a class="nav-link" href="#patents">PATENTS</a>
+            </li>
+          {% else %}
+            <!-- About 페이지가 아닐 때는 해당 페이지로 이동 -->
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '/' | relative_url }}#work-experiences">EXPERIENCES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '/' | relative_url }}#education">EDUCATION</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '/' | relative_url }}#publications">PUBLICATIONS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '/' | relative_url }}#patents">PATENTS</a>
+            </li>
+          {% endif %}
 
           <!-- Other pages (CV) -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
