@@ -56,45 +56,41 @@
             </a>
           </li>
 
-          <!-- About 페이지에서만 anchor 링크 사용 -->
-          {% if page.permalink == '/' %}
-            <!-- Experiences -->
-            <li class="nav-item">
+          <!-- Experiences -->
+          <li class="nav-item">
+            {% if page.permalink == '/' %}
               <a class="nav-link" href="#work-experiences">EXPERIENCES</a>
-            </li>
-
-            <!-- Education -->
-            <li class="nav-item">
-              <a class="nav-link" href="#education">EDUCATION</a>
-            </li>
-
-            <!-- Publications -->
-            <li class="nav-item">
-              <a class="nav-link" href="#publications">PUBLICATIONS</a>
-            </li>
-
-            <!-- Patents -->
-            <li class="nav-item">
-              <a class="nav-link" href="#patents">PATENTS</a>
-            </li>
-          {% else %}
-            <!-- About 페이지가 아닐 때는 해당 페이지로 이동 -->
-            <li class="nav-item">
+            {% else %}
               <a class="nav-link" href="{{ '/' | relative_url }}#work-experiences">EXPERIENCES</a>
-            </li>
+            {% endif %}
+          </li>
 
-            <li class="nav-item">
+          <!-- Education -->
+          <li class="nav-item">
+            {% if page.permalink == '/' %}
+              <a class="nav-link" href="#education">EDUCATION</a>
+            {% else %}
               <a class="nav-link" href="{{ '/' | relative_url }}#education">EDUCATION</a>
-            </li>
+            {% endif %}
+          </li>
 
-            <li class="nav-item">
+          <!-- Publications -->
+          <li class="nav-item">
+            {% if page.permalink == '/' %}
+              <a class="nav-link" href="#publications">PUBLICATIONS</a>
+            {% else %}
               <a class="nav-link" href="{{ '/' | relative_url }}#publications">PUBLICATIONS</a>
-            </li>
+            {% endif %}
+          </li>
 
-            <li class="nav-item">
+          <!-- Patents -->
+          <li class="nav-item">
+            {% if page.permalink == '/' %}
+              <a class="nav-link" href="#patents">PATENTS</a>
+            {% else %}
               <a class="nav-link" href="{{ '/' | relative_url }}#patents">PATENTS</a>
-            </li>
-          {% endif %}
+            {% endif %}
+          </li>
 
           <!-- Other pages (CV) -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
