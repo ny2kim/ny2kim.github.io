@@ -44,73 +44,94 @@
     </div>
   </div>
 
+<!-- project 2 -->
   <div class="row project-entry">
     <div class="col-sm-2 abbr project-img">
         <img src="/assets/img/embedded.png" alt="Embedded Software Contest" class="preview z-depth-1 rounded">
     </div>
   
-    <!-- 오른쪽: 프로젝트 정보 -->
     <div class="col-sm-10">
-      <!-- 프로젝트 제목 -->
-      <div class="title">
-        Embedded Software Contest
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="title">
+            Embedded Software Contest
+          </div>
+          
+          <div class="project-description">
+            Developed embedded software that can be implemented in mini cars to enable autonomous driving on the track.
+          </div>
+
+          <div class="project-tasks">
+            <ul>
+              <li>Developed a lightweight lane detection algorithm using OpenCV, optimized for low latency and high precision on the mini car's hardware.</li>
+              <li>Implemented scenario-based driving logic, handling the full pipeline from raw sensor input to final vehicle actuation.</li>
+              <li>Served as Team Lead, responsible for project planning, task delegation, and overall team management.</li>
+            </ul>
+          </div>
+
+          <!-- 기술 스택 -->
+          <div class="project-technologies">
+              <span class="tech-badge">C</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">Linux OS</span>
+          </div>
+
+        </div>
+          <!-- 프로젝트 기간 -->
+        <div class="col-sm-3 text-right">
+          <div class="project-duration">July 2017 - Nov 2017</div>
+        </div>
       </div>
-      
-      <!-- 프로젝트 기간 -->
-      <div class="project-duration">
-        July 2017 - Nov 2017
-      </div>
-      
-      <!-- 프로젝트 설명 -->
-      <div class="project-description">
-        Developed embedded software that can be implemented in mini cars to enable autonomous driving on the track.
-      </div>
-      
-      <!-- 기술 스택 -->
-      <div class="project-technologies">
-          <span class="tech-badge">C</span>
-          <span class="tech-badge">OpenCV</span>
-          <span class="tech-badge">Linux OS</span>
-      </div>
-  
     </div>
   </div>
 
+<!-- project 3 -->
   <div class="row project-entry">
     <div class="col-sm-2 abbr project-img">
-        <img src="/assets/img/gmpace.jpg" alt="Embedded Software Contest" class="preview z-depth-1 rounded">
+        <img src="/assets/img/gmpace.jpg" alt="gmpace" class="preview z-depth-1 rounded">
     </div>
   
-    <!-- 오른쪽: 프로젝트 정보 -->
     <div class="col-sm-10">
-      <!-- 프로젝트 제목 -->
-      <div class="title">
-        PACE Collaboration and Innovation Challenge
-      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="title">
+            PACE Collaboration and Innovation Challenge
+          </div>
+          
+          <div class="project-description">
+            Car that Knows Before You Do via Deep Learning
+          </div>
 
-      <div class="links">
-        <a href="https://drive.google.com/file/d/1YiHa_lqKpwVHPlYS2XSjrb6AqZGmhjU2/view?usp=sharing" class="btn btn-sm z-depth-0" role="button">Report</a>
-      </div>
+          <div class="project-tasks">
+            <ul>
+              <li>A multi-level driving automation system that predicts driver behavior via an eye-tracker, validated in both a driving simulator and a real-world vehicle.</li>
+            </ul>
+          </div>
 
-      <!-- 프로젝트 기간 -->
-      <div class="project-duration">
-        Jan 2017 - July 2017
-      </div>
-      
-      <!-- 프로젝트 설명 -->
-      <div class="project-description">
-        Car that Knows Before You Do via Deep Learning
-      </div>
-      
-      <!-- 기술 스택 -->
-      <div class="project-technologies">
-          <span class="tech-badge">C</span>
-          <span class="tech-badge">Eye tracker</span>
-          <span class="tech-badge">VR Simulation SW</span>
-      </div>
+          <!-- 기술 스택 -->
+          <div class="project-tech-and-links">
+            <div class="project-technologies">
+                <span class="tech-badge">C</span>
+                <span class="tech-badge">Eye tracker</span>
+                <span class="tech-badge">VR Simulation SW</span>
+            </div>
   
+            <div class="links">
+              <a href="https://drive.google.com/file/d/1YiHa_lqKpwVHPlYS2XSjrb6AqZGmhjU2/view?usp=sharing" class="btn btn-sm z-depth-0" role="button">Report</a>
+            </div>
+          </div>
+
+        </div>
+          <!-- 프로젝트 기간 -->
+        <div class="col-sm-3 text-right">
+          <div class="project-duration">Jan 2017 - July 2017</div>
+        </div>
+      </div>
     </div>
   </div>
+
+
+
 
 </div>
 
@@ -153,6 +174,14 @@
   line-height: 1.4;
   margin-bottom: 0.4rem;
   position: relative;
+}
+
+.project-tasks li::before {
+  content: "▪";
+  color: var(--global-theme-color);
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
 }
 
 .preview-placeholder {
@@ -202,6 +231,39 @@
   font-size: 0.95rem;
   line-height: 1.4;
   margin-bottom: 0.75rem;
+}
+
+.project-tech-and-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-tech-and-links .project-technologies {
+  margin-bottom: 0; /* 기존 margin 제거 */
+}
+
+/* 링크 버튼 스타일 (테두리 추가) */
+.links {
+  margin-bottom: 0;
+}
+
+.links .btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding: 0.25rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-radius: 4px; /* 둥근 모서리 */
+}
+
+.links .btn:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  text-decoration: none;
 }
 
 .project-technologies {
