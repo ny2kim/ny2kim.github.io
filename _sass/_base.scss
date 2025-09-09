@@ -1345,29 +1345,29 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .profile-social {
   text-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   .contact-icons {
-    font-size: 1.2rem; // 기존보다 훨씬 작게
+    font-size: 1.8rem; // 기존보다 훨씬 작게
 
     a {
-      margin: 0 0.2rem; // 아이콘 간격 조정
+      margin: 0 0.4rem; // 아이콘 간격 조정
       
       img {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.8rem;
+        height: 1.8rem;
         margin-bottom: 0;
       }
 
       svg {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2rem;
+        height: 2rem;
         margin-bottom: 0;
 
         image {
-          width: 1.5rem;
-          height: 1.5rem;
+          width: 2rem;
+          height: 2rem;
         }
       }
 
