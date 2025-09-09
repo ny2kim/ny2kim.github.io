@@ -10,7 +10,7 @@
     <!-- 오른쪽: 프로젝트 정보 -->
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-9">
           <div class="title">
             International Student Car Competition
           </div>
@@ -19,7 +19,15 @@
           <div class="project-description">
             Developed a real-time lane detection algorithm for a 1/4 scale autonomous vehicle, validated through simulation in real-road environments.
           </div>
-          
+
+          <!-- 세부 작업 내용 -->
+          <div class="project-tasks">
+            <ul>
+              <li>Developed an OpenCV-based lane detection algorithm robust to various weather and lighting conditions</li>
+              <li>Integrated the algorithm using ROS for multi-module communication and scenario testing</li>
+            </ul>
+          </div>
+
           <!-- 기술 스택 -->
           <div class="project-technologies">
               <span class="tech-badge">C++</span>
@@ -28,7 +36,7 @@
           </div>
 
           <!-- 프로젝트 기간 -->
-          <div class="col-sm-4 text-right">
+          <div class="col-sm-3 text-right">
             <div class="project-duration">
               Jan 2018 - May 2018
             </div>
@@ -131,6 +139,24 @@
   border-radius: 8px;
 }
 
+.project-tasks {
+  margin-bottom: 1rem;
+}
+
+.project-tasks ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style-type: none;
+}
+
+.project-tasks li {
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
 .preview-placeholder {
   width: 150px;
   height: 100px;
@@ -163,7 +189,9 @@
 .project-duration {
   color: var(--global-text-color-light);
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .project-duration i {
