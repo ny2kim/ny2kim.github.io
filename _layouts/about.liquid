@@ -88,6 +88,10 @@ layout: default
       {% include teaching.liquid %}
     {% endif %}
 
+    {% if page.service %}
+      {% include service.liquid %}
+    {% endif %}
+
 
     <!-- Social -->
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
