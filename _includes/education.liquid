@@ -3,20 +3,19 @@
 <div class="education-section">
   <div class="education-item">
     <div class="row align-items-center">
-      <!-- 왼쪽: 학교 로고 -->
       <div class="col-md-2 text-center">
         <img src="/assets/img/kookmin_university.jpg" alt="Kookim University Logo" class="education-logo">
       </div>
       
-      <!-- 중간: 학교 정보 -->
       <div class="col-md-7">
         <p class="education-school">Kookmin University</p>
         <p class="education-minor">B.S. in Computer Science and Engineering</p>
         <p class="education-minor">Minor in Automotive Software Design</p>
-        <p class="education-minor">Graduated ranked 1st in the College of Electronics and Information Engineering</p>
+        <ul class="education-highlights">
+          <li>Graduated Summa Cum Laude (ranked 1st)</li>
+        </ul>
       </div>
       
-        <!-- 오른쪽: 위치와 기간 -->
       <div class="col-md-3 text-right">
         <div class="education-meta">
           <p class="education-period">
@@ -85,6 +84,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-end !important;
+}
+
+.education-highlights {
+  font-size: 1rem;
+  color: black;
+  padding-left: 1.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.education-highlights li {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
