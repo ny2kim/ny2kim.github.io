@@ -17,18 +17,6 @@ nav_order: 5
     border: 1px solid #ddd;
   }
 
-  .cv-button-container {
-    margin-bottom: 1rem;
-    text-align: right;
-  }
-
-  .desktop-pdf { display: block; }
-  .mobile-pdf { display: none; }
-  
-  @media only screen and (max-width: 1024px) {
-    .desktop-pdf { display: none; }
-    .mobile-pdf { display: block; }
-  }
 
 </style>
 
@@ -36,21 +24,8 @@ nav_order: 5
 
 <p><em>Last updated: {{ site.time | date: "%b %d, %Y" }}</em></p>
 
-<div class="cv-button-container">
-  <a href="https://drive.google.com/file/d/1oKidZqt6bpsluqJHtWZM7Xa5NQfFaM_y/view?usp=drivesdk" target="_blank" class="btn z-depth-0" role="button">
-    <i class="fas fa-file-pdf"></i> View on Google Drive
-  </a>
-</div>
-
 <div class="cv-container">
-  <iframe class="desktop-pdf"
-    src="/assets/pdf/Nayeon_Kim_CV_250724.pdf#toolbar=0&navpanes=0&view=FitH"
-    width="100%"
-    height="100%"
-    style="border: none;">
-  </iframe>
-
-  <iframe class="mobile-pdf"
+  <iframe
     src="https://docs.google.com/gview?url={{ site.url }}{{ site.baseurl }}/assets/pdf/Nayeon_Kim_CV_250724.pdf&embedded=true"
     width="100%"
     height="100%"
