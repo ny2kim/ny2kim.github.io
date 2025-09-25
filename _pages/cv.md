@@ -52,7 +52,7 @@ nav_order: 5
   </iframe>
   
   <iframe class="mobile-pdf"
-    src="https://drive.google.com/file/d/1oKidZqt6bpsluqJHtWZM7Xa5NQfFaM_y/preview"
+    src="https://drive.google.com/file/d/1TVQLPOLtNIiyuQodt-9ghq605RvFI7xn/view?usp=sharing"
     width="100%"
     height="100%"
     style="border: none;">
