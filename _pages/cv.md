@@ -9,6 +9,26 @@ nav_order: 5
   h1.post-title {
     display: none;
   }
+
+  .pdf-container {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  @media (max-width: 768px) {
+    .pdf-container {
+      height: 80vh; 
+      min-height: 600px;
+    }
+    
+    .pdf-fallback {
+      display: block;
+    }
+  }
+  
 </style>
 
 <h1>Nayeon Kim – CV</h1>
