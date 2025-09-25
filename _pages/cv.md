@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /cv/
-title: Nayeon Kim – CV
+title: CV
 nav: true
 nav_order: 5
 ---
@@ -15,18 +15,24 @@ nav_order: 5
     width: 100%;
     height: 1000px; 
     border: 1px solid #ddd;
-    overflow: auto; 
-    -webkit-overflow-scrolling: touch;
   }
 
   .cv-button-container {
     margin-bottom: 1rem;
     text-align: right;
   }
+
+  .desktop-pdf { display: block; }
+  .mobile-pdf { display: none; }
   
+  @media only screen and (max-width: 1024px) {
+    .desktop-pdf { display: none; }
+    .mobile-pdf { display: block; }
+  }
+
 </style>
 
-<!-- <h1>Nayeon Kim – CV</h1> -->
+<h1>Nayeon Kim – CV</h1>
 
 <p><em>Last updated: {{ site.time | date: "%b %d, %Y" }}</em></p>
 
@@ -37,10 +43,17 @@ nav_order: 5
 </div>
 
 <div class="cv-container">
-  <iframe
+  <iframe class="desktop-pdf"
     src="/assets/pdf/Nayeon_Kim_CV_250724.pdf#toolbar=0&navpanes=0&view=FitH"
     width="100%"
     height="100%"
-    style="border: none;"
-  ></iframe>
+    style="border: none;">
+  </iframe>
+
+  <iframe class="mobile-pdf"
+    src="https://docs.google.com/gview?url={{ site.url }}{{ site.baseurl }}/assets/pdf/Nayeon_Kim_CV_250724.pdf&embedded=true"
+    width="100%"
+    height="100%"
+    style="border: none;">
+  </iframe>
 </div>
