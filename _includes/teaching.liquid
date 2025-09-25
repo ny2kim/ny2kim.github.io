@@ -5,7 +5,6 @@
   <!-- Teaching Assistant Experience 1 -->
   <div class="teaching-item">
     <div class="row">
-      <!-- 강의 및 역할 정보 -->
       <div class="col-sm-9">
         <p class="teaching-course">
           Introduction to Engineering Design
@@ -16,7 +15,7 @@
         </p>
       </div>
       
-      <!-- 오른쪽: 기간과 위치 -->
+
       <div class="col-sm-3 text-right">
         <div class="teaching-meta">
           <p class="teaching-period">
@@ -45,7 +44,7 @@
 
 .teaching-course {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: bolder;
   margin-bottom: 0.3rem;
   color: black;
 }
@@ -84,7 +83,11 @@
   justify-content: flex-end;
 }
 
-/* 모바일 반응형 */
+.col-sm-9 {
+  padding-left: 0 !important; 
+}
+
+
 @media (max-width: 768px) {
   .teaching-item .row {
     text-align: center;
