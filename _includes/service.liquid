@@ -6,9 +6,8 @@
   <div class="service-category">
     <div class="service-category-title">Conference Reviewer</div>
     <div class="service-list">
-      <li class="service-item">
-        NeurIPS 2025
-      </li>
+      <span class="focus-pill">NeurIPS</span>
+      <span class="service-years">2025, 2026</span>
     </div>
   </div>
 </div>
@@ -25,35 +24,27 @@
 .service-category-title {
   font-size: 1.1rem;
   font-weight: bolder;
-  color: black;
-  margin-bottom: 1rem;
+  color: var(--global-text-color);
+  margin-bottom: 0.6rem;
 }
 
 .service-list {
-  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.service-item {
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--global-text-color);
+.focus-pill {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: #f3e6cd;
+  color: #b8842c;
 }
 
-.service-item strong {
-  color: var(--global-text-color);
-  font-weight: 600;
-  margin-right: 0.5rem;
-}
-
-
-@media (max-width: 768px) {
-  .service-list {
-    margin-left: 0.5rem;
-  }
-  
-  .service-item {
-    font-size: 0.9rem;
-  }
+.service-years {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
 }
 </style>
