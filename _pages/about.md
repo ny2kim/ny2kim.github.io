@@ -8,7 +8,7 @@ profile:
   image: prof_pic_nayeon.JPG
   image_circular: true # crops the image to make it circular
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 research_interests: true
 work_experiences: true
 education: true
