@@ -20,7 +20,6 @@ email: jhyh1110@gmail.com # your email address
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: nayeon-kim1110# your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
@@ -31,6 +30,7 @@ linkedin_username: nayeon-kim1110# your LinkedIn user name
 # research_gate_profile: # your profile on ResearchGate
 # rss_icon: true # set to true to show the RSS icon
 scholar_userid: rgkJdmEAAAAJ # your Google Scholar ID
+linkedin_username: nayeon-kim1110 # your LinkedIn user name
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
