@@ -38,6 +38,14 @@ h6,
   letter-spacing: 0.02em;
 }
 
+.post-header .desc {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }

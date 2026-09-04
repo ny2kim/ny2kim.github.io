@@ -2,6 +2,7 @@
 layout: about
 title: ABOUT
 permalink: /
+subtitle: Ph.D. Student in Computer Science, University of Minnesota
 
 profile:
   align: left
@@ -20,5 +21,5 @@ service: true
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. student in Computer Science at the University of Minnesota, advised by [Professor Yao-Yi Chiang](https://cse.umn.edu/cs/yao-yi-chiang). I received a B.S. degree in Computer Science and Engineering with a minor in Automotive Software Design. Previously, I was a researcher at [Samsung AI Center](https://www.sait.samsung.co.kr/saithome/main/main.do) (ex-SAIT AI Research Center), where I worked on autonomous driving perception and AI models for semiconductor applications. Before that, I was a research intern at [KETI](https://www.keti.re.kr/) (Korea Electronics Technology Institute), where I focused on unsupervised depth prediction and camera motion estimation.
+I am advised by [Professor Yao-Yi Chiang](https://cse.umn.edu/cs/yao-yi-chiang) at the University of Minnesota. I received a B.S. degree in Computer Science and Engineering with a minor in Automotive Software Design. Previously, I was a researcher at [Samsung AI Center](https://www.sait.samsung.co.kr/saithome/main/main.do) (ex-SAIT AI Research Center), where I worked on autonomous driving perception and AI models for semiconductor applications. Before that, I was a research intern at [KETI](https://www.keti.re.kr/) (Korea Electronics Technology Institute), where I focused on unsupervised depth prediction and camera motion estimation.
 
