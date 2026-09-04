@@ -1,114 +1,133 @@
 <!-- _includes/education.liquid -->
 <h2 id="education">Education</h2>
-<div class="education-section">
-  <div class="education-item">
-    <div class="row align-items-center">
-      <div class="col-md-2 text-center">
-        <img src="/assets/img/kookmin_university.jpg" alt="Kookim University Logo" class="education-logo">
-      </div>
-      
-      <div class="col-md-7">
-        <p class="education-school">Kookmin University</p>
-        <p class="education-minor">B.S. in Computer Science and Engineering</p>
-        <p class="education-minor">Minor in Automotive Software Design</p>
-        <ul class="education-highlights">
-          <li>Graduated Summa Cum Laude (ranked 1st)</li>
-        </ul>
-      </div>
-      
-      <div class="col-md-3 text-right">
-        <div class="education-meta">
-          <p class="education-period">
-            Mar 2015 - Feb 2019
-          </p>
-          <p class="education-location">
-            Seoul, South Korea
-          </p>
+<div class="timeline-section">
+  <div class="timeline">
+
+    <!-- University of Minnesota -->
+    <div class="timeline-item is-current">
+      <div class="timeline-dot"></div>
+      <div class="timeline-top">
+        <div class="timeline-headline">
+          <a class="timeline-org" href="#">University of Minnesota</a>
+          <span class="badge-current">current</span>
         </div>
+        <span class="timeline-role">Ph.D. Student, Computer Science</span>
+      </div>
+      <div class="timeline-subline">
+        <span class="timeline-loc">Minneapolis, MN</span>
+        <span class="timeline-period">Sep 2026 &ndash; Present</span>
       </div>
     </div>
+
+    <!-- Kookmin University -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-top">
+        <div class="timeline-headline">
+          <a class="timeline-org" href="#">Kookmin University</a>
+        </div>
+        <span class="timeline-role">B.S., Computer Science and Engineering</span>
+      </div>
+      <div class="timeline-subline">
+        <span class="timeline-loc">Seoul, South Korea</span>
+        <span class="timeline-period">Mar 2015 &ndash; Feb 2019</span>
+      </div>
+      <div class="timeline-badges">
+        <span class="badge-minor">Minor in Automotive Software Design</span>
+        <span class="badge-honor">Graduated Summa Cum Laude (ranked 1st)</span>
+      </div>
+    </div>
+
   </div>
 </div>
 
 <style>
-.education-section {
-  margin-bottom: 2rem;
+.timeline-section { margin-bottom: 2rem; }
+
+.timeline { position: relative; padding-left: 1.75rem; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 1.5px;
+  background: var(--global-divider-color);
 }
 
-.education-item {
-  background-color: var(--global-card-bg-color);
-  border-radius: 0.375rem;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-}
+.timeline-item { position: relative; padding-bottom: 1.9rem; }
+.timeline-item:last-child { padding-bottom: 0; }
 
-.education-logo {
-  max-width: 80px;
-  max-height: 80px;
-  object-fit: contain;
+.timeline-dot {
+  position: absolute;
+  left: -1.75rem;
+  top: 0.2rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  border: 2px solid var(--global-text-color-light);
 }
-
-.education-school {
-  font-size: 1.1rem;
-  font-weight: bolder;
-  margin-bottom: 0.25rem;
-  color: black;
+.timeline-item.is-current .timeline-dot {
+  border-color: var(--global-theme-color);
+  background: var(--global-theme-color);
+  box-shadow: 0 0 0 4px rgba(14, 110, 99, 0.15);
 }
+.timeline-item.is-current .timeline-period { color: var(--global-theme-color); }
 
-.education-degree {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-  color: var(--global-text-color);
-}
-
-.education-minor {
-  font-size: 1rem;
-  color: black;
-  margin-bottom: 0;
-}
-
-.education-meta p {
-  margin-bottom: 0.6rem;
-  font-size: 1rem;
-  color: black;
-}
-
-.education-meta i {
-  width: 16px;
-  margin-right: 0.5rem;
-  color: black;
-}
-
-.education-location, .education-period {
+.timeline-top {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.2rem;
+}
+.timeline-headline { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.timeline-org {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+.timeline-org:hover { color: var(--global-theme-color); }
+.timeline-role { font-size: 0.95rem; font-weight: 700; color: var(--global-theme-color); white-space: nowrap; }
+
+.timeline-subline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 0.1rem 0 0.5rem;
+}
+.timeline-loc { font-size: 0.85rem; color: var(--global-text-color-light); }
+.timeline-period { font-family: monospace; font-size: 0.8rem; color: var(--global-text-color-light); white-space: nowrap; }
+
+.timeline-badges { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; margin-bottom: 0.5rem; }
+.badge-minor,
+.badge-honor {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+.badge-minor { color: var(--global-theme-color); background: rgba(14, 110, 99, 0.1); }
+.badge-honor { color: #b8842c; background: #f3e6cd; }
+.badge-current {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--global-theme-color);
+  background: rgba(14, 110, 99, 0.1);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
 }
 
-.education-highlights {
-  font-size: 1rem;
-  color: black;
-  padding-left: 1.5rem;
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-}
-
-.education-highlights li {
-  margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .education-item .row {
-    text-align: center;
-  }
-  
-  .education-meta {
-    margin-top: 1rem;
-  }
-  
-  .education-location, .education-period {
-    justify-content: center;
-  }
+@media (max-width: 576px) {
+  .timeline-subline { flex-direction: column; gap: 0.15rem; }
 }
 </style>

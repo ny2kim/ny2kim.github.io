@@ -60,6 +60,16 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Research Interests -->
+    {% if page.research_interests %}
+      {% include research_interests.liquid %}
+    {% endif %}
+
+    <!-- Education -->
+    {% if page.education %}
+      {% include education.liquid %}
+    {% endif %}
+
     <!-- Work Experience -->
     {% if page.work_experiences %}
       {% include work_experiences.liquid %}
@@ -68,11 +78,6 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Education -->
-    {% if page.education %}
-      {% include education.liquid %}
     {% endif %}
 
     <!-- Patents -->
