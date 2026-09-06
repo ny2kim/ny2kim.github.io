@@ -2,7 +2,6 @@
 layout: about
 title: ABOUT
 permalink: /
-subtitle: Ph.D. Student in Computer Science, University of Minnesota
 
 profile:
   align: left
