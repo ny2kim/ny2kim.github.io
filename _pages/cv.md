@@ -4,7 +4,10 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
+cv_pdf: /assets/pdf/CV_Nayeon_Kim.pdf
+cv_updated: 2026-10-18
 ---
+{% assign cv_pdf_url = page.cv_pdf | relative_url %}
 <style>
   h1.post-title {
     display: none;
@@ -35,26 +38,27 @@ nav_order: 5
 
 <h1>Nayeon Kim – CV</h1>
 
-<p><em>Last updated: {{ site.time | date: "%b %d, %Y" }}</em></p>
+<p><em>Last updated: {{ page.cv_updated | date: "%b %d, %Y" }}</em></p>
 
 <div class="cv-button-container">
-  <a href="https://drive.google.com/file/d/1D1JxqWgxGwUMC2fcaWRN6RJ0bABa6n2g/view?usp=sharing" target="_blank" class="btn z-depth-0" role="button">
-    <i class="fas fa-file-pdf"></i> View on Google Drive
+  <a href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer" class="btn z-depth-0" role="button">
+    <i class="fas fa-file-pdf"></i> View PDF
   </a>
 </div>
 
 <div class="cv-container">
   <iframe class="desktop-pdf"
-    src="/assets/pdf/Nayeon_Kim_CV_1209.pdf#toolbar=0&navpanes=0&view=FitH"
+    src="{{ cv_pdf_url }}#toolbar=0&navpanes=0&view=FitH"
     width="100%"
     height="100%"
     style="border: none;">
   </iframe>
   
   <iframe class="mobile-pdf"
-    src="https://drive.google.com/file/d/1TVQLPOLtNIiyuQodt-9ghq605RvFI7xn/view?usp=sharing"
+    src="{{ cv_pdf_url }}#toolbar=0&navpanes=0&view=FitH"
     width="100%"
     height="100%"
     style="border: none;">
   </iframe>
 </div>
+
