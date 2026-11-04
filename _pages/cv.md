@@ -5,9 +5,10 @@ title: CV
 nav: true
 nav_order: 5
 cv_pdf: /assets/pdf/CV_Nayeon_Kim.pdf
-cv_updated: 2026-10-18
+cv_updated: 2026-11-04
 ---
-{% assign cv_pdf_url = page.cv_pdf | relative_url %}
+{% assign cv_version = page.cv_updated | date: "%Y%m%d" %}
+{% assign cv_pdf_url = page.cv_pdf | relative_url | append: '?v=' | append: cv_version %}
 <style>
   h1.post-title {
     display: none;
